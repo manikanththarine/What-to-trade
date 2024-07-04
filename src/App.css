@@ -32,7 +32,435 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* //////////////////////// navbar ////////////////////////////// */
+
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  height: 65px;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #f0e5e5;
+  position: fixed;
+  background-image: url(/./src/accects/istockphoto-482730527-612x612.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar h1 {
+  margin-left: 2%;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 18px;
+  position: static;
+  padding: 1rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  font-size: 19px;
+
+}
+
+.navbar.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: -1.8%;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transform: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+
+}
+
+.hamburger {
+  display: none;
+  color: #000000;
+  margin: auto;
+
+}
+
+.navbar .icon {
+  font-size: 1.5rem;
+  color: #fff;
+
+}
+
+.model {
+  margin-top: -28%;
+  margin-left: 30%;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 50%;
+  background-color: #eee;
+  height: 25vh;
+}
+
+
+@media screen and (max-width: 1352px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul li a {
+    color: rgb(0, 0, 0);
+    position: static;
+
+
+  }
+
+  .navbar ul li {
+    color: rgb(0, 0, 0);
+
+
+  }
+
+  .navbar .nav-menu {
+    position: absolute;
+    background: #f9f9f9fe;
+    height: 100vh;
+    width: 195px;
+    top: 0;
+    right: -225px;
+    text-align: left;
+    z-index: 5;
+    margin-top: 80px;
+    color: black;
+  }
+
+  .navbar .active {
+    right: 0;
+  }
+
+  .navbar .nav-menu li a {
+    font-size: 1.5rem;
+  }
+
+
+  .navbar .nav-menu {
+    display: block;
+
+  }
+}
+
+/* ///////////////////////// marketing /////////////////////////////////// */
+
+.sets {
+  font-size: 16Px;
+  margin-top: 1%;
+  margin-left: -14px;
+}
+
+.marque {
+  background-color: rgb(247, 0, 0);
+  width: min-content;
+  border: 14% solid;
+  color: white;
+  margin-top: 5%;
+}
+
+.hea p {
+  font-size: 10Px
+}
+
+.heaa p {
+  font-size: 10Px
+}
+
+
+
+.heaa {
+  margin-top: 2%;
+  text-align: left;
+}
+
+.divrows {
+  font-size: 13Px;
+}
+
+.divrows .rows {
+  width: 38vh;
+  margin-top: 0.5%;
+  cursor: pointer;
+}
+
+.divrow {
+  font-size: 13Px;
+}
+
+.divrow .row {
+  width: 38vh;
+  margin-top: 0.5%;
+  cursor: pointer;
+}
+
+.divrow .row img {
+  width: 7.5vh;
+  margin-left: 25%;
+  margin-top: -10px;
+}
+
+.sidenav {
+  float: right;
+  margin-right: 25%;
+  margin-top: -80vh;
+  height: 100%;
+}
+
+.para {
+  margin: 1% 21%;
+  width: 49%;
+  margin-top: -84vh;
+
+}
+
+@media screen and (max-width: 1352px) {
+  .sets {
+    font-size: 12px;
+  }
+
+  .hea {
+    display: none;
+  }
+
+  .sets {
+    display: none;
+  }
+
+  .divrow {
+    display: none;
+  }
+
+  .divrows {
+    display: none;
+  }
+
+  .heaa {
+    display: none;
+  }
+
+
+  .para {
+    margin: 1% 8%;
+    width: 78%;
+
+  }
+
+  .marque {
+    margin-top: 9vh;
+
+  }
+
+}
+
+/* ///////////////////////////// Contact //////////////////////////////////////////// */
+.con {
+  text-align: center;
+  color: white;
+}
+
+.contact {
+  border: 2px solid;
+  border-radius: 5px;
+  width: 50%;
+  height: 55vh;
+  margin-left: 25%;
+  margin-top: -8%;
+  border-color: aliceblue;
+  background-color: white;
+}
+
+.text {
+  margin-left: 15px;
+  margin-top: 5px
+}
+
+.text2 {
+  margin-left: 55px
+}
+
+.img {
+  margin-left: 505px;
+  margin-top: -265px
+}
+
+.name {
+  height: 35px;
+  width: 50vh;
+
+}
+
+@media screen and (max-width:940px) {
+
+  .contact {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 80%;
+    height: 50vh;
+    margin-left: 10%;
+    margin-top: -8%;
+    border-color: aliceblue;
+    background-color: white;
+  }
+
+  .text {
+    margin-left: auto;
+  }
+
+  .text2 {
+    margin-left: 50px;
+    width: 60vh
+  }
+
+  .img {
+    display: none
+  }
+
+}
+
+/* ///////////////////////sign in//////////////////////// */
+.main {
+  width: 30%;
+  margin-top: 14vh;
+  border-radius: 5%;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  height: 400px;
+
+}
+
+.link {
+  margin-top: 10px;
+  color: blue;
+  cursor: pointer;
+
+}
+
+
+.imgs {
+  padding-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.container-image {
+  background-color: rgb(223, 221, 221);
+  border-radius: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 115px;
+  width: 115px;
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 130px;
+}
+
+.input-box {
+  position: relative;
+  width: 100px;
+  height: 20px;
+}
+
+.input-box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(5, 5, 5);
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.login-button {
+  margin-top: 25px;
+  width: 50%;
+  height: 40px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500
+}
+
+
+
+@media screen and (max-width:852px) {
+  .link {
+    margin-top: 10px;
+    color: blue;
+    cursor: pointer;
+    font-size: 9px;
+  }
+
+  .name {
+    width: auto;
+    font-size: 9px;
+
+  }
+
+  .main {
+    width: 50%;
+    font-size: 9px;
+
+  }
+}
+
+/* ////////////////////admin///////////////////////////////// */
+
+.admincontainer {
+  border: 0.5px solid;
+  width: 85%;
+  margin:5% auto;
+  border-radius: 1%;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 3px rgb(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: center;
+}
+.blogcontainer{
+  width:80%;
+  margin:auto;
+
+}
+.blogcontainer th{
+  background-color: #26e836;
+
+}
+.admincontainer img {
+  width: 78%
 }
